@@ -14,13 +14,15 @@ ML1 In-Class
 
 # %%
 # import packages
+from turtle import color
 from pydataset import data
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
-# %%
-mtcars = data('mtcars')
-mtcars.head()
+import plotly.express as px
+# set the dimension on the images
+import plotly.io as pio
+pio.templates.default = "plotly_dark" # set dark theme
 
 # %%
 iris = data('iris')
@@ -39,12 +41,12 @@ Example: k-Nearest Neighbors
 # First, we need to separate variables into independent and dependent
 # dataframes.
 
-X = iris.drop(['Species'], axis=1).values  # dependent variables
-y = iris['Species'].values  # independent variable
+X = iris.drop(['Species'], axis=1).values  # features
+y = iris['Species'].values  # target
 
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.33, random_state=42)
-# we can change the proportion of the test size; we'll go with 1/3 for no
+# we can change the proportion of the test size; we'll go with 1/3 for now
 
 # %%
 # Now, we use the scikitlearn k-NN classifier
@@ -77,6 +79,11 @@ patterns['Petal.Length'].describe()
 # %%
 patterns['Petal.Width'].describe()
 
+# %%
+# scatter plot using plotly
+fig = px.scatter_3d(iris, x='Sepal.Length', y='Sepal.Width', z='Petal.Length',
+                 color='Species', title='Iris Sepal Dimensions')
+fig.show()
 # %%
 """
 Mild disclaimer
