@@ -101,7 +101,7 @@ Mild disclaimer
 # 1. What is the purpose of data splitting?
 # To separate data into training and evaluation sets so the model can be tested on unseen data and avoid overfitting.
 # 2. What can we learn from data testing/validation?
-# To measure how well the model generalizes and to tune parameters without biasing performance.
+# Measuring how well the model generalizes and to tune parameters without biasing performance.
 # 3. How do we know if a model is working?
 # A model is working if it performs well on validation/testing data using appropriate metrics and shows consistent results.
 # 4. How could we find the model error?
