@@ -18,7 +18,7 @@ Read through the case study and then discuss the problem as a group then address
 - Small data set with inconsistencies/noise and lack of funding
 * What is the target variable and what type (reg or class) of solution are they developing?
 - What software they should invest in and how it suits each district
-- They are developing a regression solution.
+- They are developing a classification solution because they are using metrics to generalize districts to fit a district to a software.
 * How would they know the solution was working (business metric)? 
 - Improved student math scores
 - Reduced cost of software long-term
