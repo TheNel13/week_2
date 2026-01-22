@@ -9,15 +9,29 @@ Key Points to Cover
 * Data to Concept
 
 Read through the case study and then discuss the problem as a group then address these questions below: 
-* What problems are facing the organization?  
-* What is the target variable and what type (reg or class) of solution are they developing? 
-* How would they know the solution was working (business metric)?
-* What other issues might the team be facing? 
+* What problem is the organization trying to solve? 
+- They are trying to reduce unnecessary investments in Mathematics software that does not align with the schools needs.
+* What issues are they facing trying to solve this problem? 
+- Generalizing the system to districts in other regions where budgets and cultural factors may be different.
+- Making sure all districts are equally represented so one group does not have too strong of an influence
+- Validation of the system’s effectiveness: They can’t only measure success based on how accurate the recommendations are. They have to look at outcomes like student performance, long-term cost savings, and teacher satisfaction.
+- Small data set with inconsistencies/noise and lack of funding
+* What is the target variable and what type (reg or class) of solution are they developing?
+- What software they should invest in and how it suits each district
+- They are developing a regression solution.
+* How would they know the solution was working (business metric)? 
+- Improved student math scores
+- Reduced cost of software long-term
+- Teacher satisfaction
+
 
 Work through the following Data to Concept and Learning:
   * How difficult is the data to gather?
-  * Is the target difficult to measure or break into smaller parts?
-  * What level of uncertainty (risk) are you willing to accept? 
+  - The data will be difficult to gather with a survey since it will be time consuming, potentially biased, and also possibly incomplete since data scientists will have to create their own metrics to predict how ready school systems are to adopt new technologies and how much help they would need.
+  * Is the target difficult to predict?
+  - Yes because the model is made with scores from a Likert scale which don’t represent the individual contexts of each district. It's difficult to generalize outcomes to all schools in a district as learning can be context dependent. Additionally, numbers on a scale may not be able to predict the long term success of the recommendation as learning changes over time.
+  * What are some of the risks associated with building this solution? 
+  - Risks associated with building this is biased or noisy survey data which could lead to bad recommendations, limited ability to generalize districts in other areas or reliance on metrics instead of educational impact. Also, there could be recommendations to districts where said districts do not have the finances or faculty to maintain the software to a level where it would improve learning. 
 
 Take 20 to 30 minutes to gather your answers then we will discuss. I do want you to submit a written summary of the results so it might be a good idea to assign a note taker.  
 
